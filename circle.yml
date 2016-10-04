@@ -15,6 +15,6 @@ deployment:
   master:
     branch: master
     commands:
-      - docker login -u jepskiluv -p $DOCKER_PASSWORD
+      - docker login -u jepskiluv -p $DOCKER_PASSWORD -e jeppesvendsen@gmail.com
       - docker tag devops_web jepskiluv/devops
       - docker push jepskiluv/devops
