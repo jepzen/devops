@@ -13,7 +13,7 @@ test:
     - docker-compose up -d
 deployment:
   master:
-    branch:
+    branch: master
     commands:
       - docker login -u jepskiluv -p $DOCKER_PASSWORD
       - docker tag devops_web jepskiluv/devops
