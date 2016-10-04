@@ -11,3 +11,10 @@ dependencies:
 test:
   override:
     - docker-compose up -d
+deployment:
+  master:
+    branch:
+    commands:
+      - docker login -u jepskiluv -p $DOCKER_PASSWORD
+      - docker tag devops_web jepskiluv/devops
+      - docker push jepskiluv/devops
